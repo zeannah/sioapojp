@@ -1,0 +1,101 @@
+/* General Styles */
+html, body {
+    height: 100%; /* Full height for body */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('c:/Users/0ne/Downloads/mfnhsss7.jpg'); /* Set the background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    color: #ffffff; /* Dark text color */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height for the wrapper */
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark background for header */
+    color: white; /* White text color */
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px; /* Logo font size */
+    font-weight: bold; /* Bold logo */
+}
+
+.navbar {
+    list-style: none; /* Remove bullet points */
+    display: flex;
+    gap: 15px; /* Space between navbar items */
+}
+
+.navbar a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.navbar a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.section-content {
+    padding: 20px; /* Add padding to the section content */
+    text-align: center; /* Center the text */
+    background-color: transparent; /* Semi-transparent white background for readability */
+    margin: 20px; /* Margin around the section */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 100px;
+}
+
+.downloadable-forms {
+    margin-top: 20px; /* Space above the downloadable forms */
+}
+
+.form-box {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-row {
+    display: flex; /* Flexbox for footer layout */
+    justify-content: space-between; /* Space between footer columns */
+    padding: 20px; /* Padding for footer */
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark background for footer */
+    color: white; /* White text color */
+}
+
+.footer-col {
+    flex: 1; /* Equal width for footer columns */
+    margin: 0 10px; /* Margin between columns */
+}
+
+.footer-col h4 {
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.footer-col ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.footer-col a {
+    color: white; /* White text for footer links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer-col a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

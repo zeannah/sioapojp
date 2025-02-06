@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Life</title>
+    <link rel="stylesheet" href="DESIGN FOR CAMPUS LIFE.css"> 
+</head>
+<body>
+    <div class="wrapper"> <!-- Added wrapper for flexbox layout -->
+        <header>
+            <nav>
+                <div class="logo">MANOLO FORTICH NATIONAL HIGH SCHOOL</div>
+                <ul class="navbar">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="NEWSROOM.html">Newsroom</a></li>
+                    <li><a href="ALUMNAI.html">Alumni</a></li> 
+                    <li><a href="ACADEMICS.html">Academics</a></li>
+                    <li><a href="CAMPUS LIFE.html">Campus Life</a></li>
+                    <li><a href="ABOUT.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- END HEADER CODE -->
+
+        <!-- START SECTION CODE -->
+        <section>
+            <div class="section-content">
+                <h1>Campus Life</h1>
+                <h2>Manolo Fortich National High School</h2>
+            </div>
+        </section>
+        <!-- END SECTION CODE -->
+
+        <!-- START STUDENT REVIEWS CODE -->
+        <div class="reviews">
+            <h3>Student Reviews</h3>
+            <div id="review-container"></div>
+        </div>
+        <!-- END STUDENT REVIEWS CODE -->
+
+        <!-- START FOOTER CODE -->
+        <footer> 
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>FOLLOW US:</h4>
+                    <ul>
+                        <li><a href="https://www.facebook.com/ManoloFortichNHSOfficial/">FB PAGE: @ManoloFortichNHSOfficial</a></li>
+                        <li><a href="https://www.instagram.com/">INSTA: @ManoloFortichNHS</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col"> 
+                    <h4>EMAIL US:</h4>
+                    <ul>
+                        <li><a href="mailto:ManoloFortichNHS@gmail.com">ManoloFortichNHS@gmail.com</a></li> 
+                        <li><a href="mailto:MFNHS@yahoo.com">MFNHS@yahoo.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col"> 
+                    <h4>CONTACT US:</h4>
+                    <ul>
+                        <li><a href="tel:80008008000">TEL#: 8000-800-8000</a></li>
+                        <li><a href="tel:90099874548">PHONE #: 9009-987-4548</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </footer> 
+        <!-- END FOOTER CODE -->
+    </div> <!-- End of wrapper -->
+
+    <script>
+        // JavaScript to dynamically create student reviews
+        const reviews = [
+            {
+                name: "Merry Mariel Abunda",
+                review: "Manolo Fortich National High School is the best school for me you can make new friends new memories and pursue your dreams"
+            },
+            {
+                name: "Sylina Syabel Galagar",
+                review: "As a student of MFNHS, I take pride in being part of a school that values education, discipline, and the overall development of its students. The teachers here are dedicated and approachable, always encouraging us to excel academically and grow as individuals. The school provides opportunities for us to participate in various activities—whether it's academics, sports, or extracurricular events—helping us discover and nurture our talents. MFNHS fosters a sense of community among students, where respect, cooperation, and teamwork are instilled. It is more than just a place for learning; it feels like a second home where we are prepared for the future while also building lifelong friendships. I am grateful to be part of an institution that shapes us into well-rounded individuals."
+            },
+            {
+                name:" James Raynald",
+                review: "The academic programs are rigorous but rewarding. I feel well-prepared for my future!"
+            }
+        ];
+
+        function createReviewElements(reviews) {
+            const reviewContainer = document.getElementById('review-container');
+            reviews.forEach(review => {
+                const reviewItem = document.createElement('div');
+                reviewItem.className = 'review-item';
+                reviewItem.innerHTML = `<p><strong>${review.name}</strong></p><p>"${review.review}"</p>`;
+                reviewContainer.appendChild(reviewItem);
+            });
+        }
+
+        // Create student reviews
+        createReviewElements(reviews);
+    </script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAWIEE MANOLO FORTICH NHS</title>
+    <link rel="stylesheet" href="DESIGN FOR ACADEMICS.css">
+    <style>
+        /* Flip effect styles */
+        .strand-box {
+            position: relative;
+            width: 300px; /* Set a fixed width for the box */
+            height: 200px; /* Set a fixed height for the box */
+            margin: 20px auto; /* Center the box */
+            perspective: 1000px; /* Perspective for 3D effect */
+        }
+
+        .strand-inner {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d; /* Preserve 3D effect */
+        }
+
+        .strand-box:hover .strand-inner {
+            transform: rotateY(180deg); /* Flip on hover */
+        }
+
+        .strand-front, .strand-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden; /* Hide the back face */
+            border: 1px solid #007BFF; /* Blue border for strand boxes */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9); /* Light background for front */
+        }
+
+        .strand-back {
+            transform: rotateY(180deg); /* Hide the back face initially */
+            background: rgba(255, 255, 255, 0.95); /* Slightly different background for back */
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper"> <!-- Added wrapper for flexbox layout -->
+        <header>
+            <nav>
+                <div class="logo">MANOLO FORTICH NATIONAL HIGH SCHOOL</div>
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="NEWSROOM.html">Newsroom</a></li>
+                    <li><a href="ALUMNI.html">Alumni</a></li> 
+                    <li><a href="ACADEMICS.html">Academics</a></li>
+                    <li><a href="CAMPUS LIFE.html">Campus Life</a></li>
+                    <li><a href="ABOUT.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--END HEADER CODE-->
+
+     <!--START SECTION CODE-->
+     <section>
+        <div class="section-content">
+            <h1>Welcome to Manolo Fortich National High School</h1>
+            <h2>"The Home of Spotless Jewels"</h2>
+            <p>At Manolo Fortich National High School (MFNHS), we offer a wide range of curriculum strands based on the DepEd K-12 standards. These strands allow students to specialize in various fields, preparing them for further education or the workforce.</p>
+
+            <h3>Junior High School Strands</h3>
+            <div id="junior-high-strands"></div>
+
+            <h3>Senior High School Strands</h3>
+            <div id="senior-high-strands"></div>
+
+            <p>To learn more about the DepEd curriculum strands, please visit the official DepEd website:</p>
+            <a href="https://www.deped.gov.ph/k-to-12/" target="_blank">DepEd K to 12 Curriculum</a>
+
+            <h3>Additional Learning Resources</h3>
+            <p>For students who wish to enhance their learning experience, we recommend exploring the following resources:</p>
+            <ul>
+                <li><a href="https://www.deped.gov.ph/" target="_blank">DepEd Official Website</a></li>
+                <li><a href="https://www.teacherph.com/" target="_blank">TeacherPH - Educational Resources for Teachers</a></li>
+                <li><a href="https://www.khanacademy.org/" target="_blank">Khan Academy - Free Online Education</a></li>
+            </ul>
+
+            <img src="c:/Users/0ne/Pictures/GALILEO 24-25(DO NOT OPEN!!!)/VSCODE/mfnhss.png" alt="MFNHS Image" />
+        </div>
+    </section>
+    <!--END SECTION CODE-->
+
+    <!--START FOOTER CODE-->
+    <footer> 
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4>FOLLOW US:</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/ManoloFortichNHSOfficial/">FB PAGE: @ManoloFortichNHSOfficial</a></li>
+                    <li><a href="https://www.instagram.com/">INSTA: @ManoloFortichNHS</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col"> 
+                <h4>EMAIL US:</h4>
+                <ul>
+                    <li><a href="mailto:ManoloFortichNHS@gmail.com">ManoloFortichNHS@gmail.com</a></li> 
+                    <li><a href="mailto:MFNHS@yahoo.com">MFNHS@yahoo.com</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col"> 
+                <h4>CONTACT US:</h4>
+                <ul>
+                    <li><a href="tel:80008008000">TEL#: 8000-800-8000</a></li>
+                    <li><a href="tel:90099874548">PHONE #: 9009-987-4548</a></li> 
+                </ul>
+            </div>
+        </div>
+    </footer> 
+    <!-- END FOOTER CODE -->
+</div> <!-- End of wrapper -->
+
+<script>
+  // Simple JavaScript to create strand boxes
+const juniorHighStrands = [
+    {
+        name: "STE (Science, Technology, and Engineering)",
+        link: "https://sites.google.com /deped.gov.ph/lauisnhs/curricular-offerings/junior-hs/science-technology-and-engineering-ste-program"
+    },
+    {
+        name: "SPA (Special Program for Arts)",
+        link: "https://depedbatangascity.org/programs/spa/"
+    },
+    {
+        name: "SPS (Special Program in Sports)",
+        link: "https://www.deped.gov.ph/wp-content/uploads/2015/06/DO_s2015_25.pdf"
+    },
+    {
+        name: "SPJ (Special Program in Journalism)",
+        link: "https://deped-isabela.com.ph/wp-content/uploads/2019/02/SPJ-1.pdf"
+    },
+    {
+        name: "ICT (Information and Communications Technology)",
+        link: "https://www.depedimuscity.com/services/ict.php"
+    },
+    {
+        name: "TVL (Technical-Vocational-Livelihood)",
+        link: "https://www.deped.gov.ph/k-to-12/about/k-to-12-basic-education-curriculum/technology-and-livelihood-education-tle-and-technical-vocational-livelihood-tvl-track/"
+    },
+    {
+        name: "SPTVE (Special Program in Technical-Vocational Education)",
+        link: "https://depedcalabarzon.ph/wp-content/uploads/2024/08/RM-2024-564.pdf"
+    },
+    {
+        name: "IPED (Indigenous Peoples Education)",
+        link: "https://www.deped.gov.ph/wp-content/uploads/2016/04/DO_s2016_22.pdf"
+    },
+    {
+        name: "Regular Strand",
+        link: "https://www.deped.gov.ph/wp-content/uploads/2018/10/DO_s2009_16.pdf"
+    }
+];
+
+const seniorHighStrands = [
+    {
+        name: "Science, Technology, Engineering, and Mathematics (STEM)",
+        link: "https://www.deped.gov.ph/wp-content/uploads/2019/01/Science-Technology-Engineering-and-Mathematics-STEM-Strand.pdf"
+    },
+    {
+        name: "Accountancy, Business, and Management (ABM)",
+        link: "https://www.deped.gov.ph/k-to-12/about/k-to-12-basic-education-curriculum/academic-track/accountancy-business-and-management-abm-strand/"
+    },
+    {
+        name: "Humanities and Social Sciences (HUMSS)",
+        link: "https://www.deped.gov.ph/k-to-12/about/k-to-12-basic-education-curriculum/academic-track/humanities-and-social-sciences-humss-strand/"
+    },
+    {
+        name: "General Academic Strand (GAS)",
+        link: "https://www.deped.gov.ph/k-to-12/senior-high-school-curriculum/general-academic-strand-gas/"
+    },
+    {
+        name: "Technical-Vocational-Livelihood (TVL)",
+        link: "https://www.deped.gov.ph/k-to-12/about/k-to-12-basic-education-curriculum/technology-and-livelihood-education-tle-and-technical-vocational-livelihood-tvl-track/"
+    }
+];
+
+function createStrandBoxes(strands, containerId) {
+    const container = document.getElementById(containerId);
+    const strandContainer = document.createElement('div');
+    strandContainer.className = 'strand-container';
+    container.appendChild(strandContainer);
+
+    strands.forEach((strand, index) => {
+        const strandBox = document.createElement('div');
+        strandBox.className = 'strand-box';
+        strandBox.innerHTML = `
+            <div class="strand-inner">
+                <div class="strand-front">
+                    <strong>${strand.name}</strong>
+                </div>
+                <div class="strand-back">
+                    <p><a href="${strand.link}" target="_blank">Learn more about ${strand.name}</a></p>
+                </div>
+            </div>`;
+        if (index % 2 === 0) {
+            strandBox.style.float = 'left';
+        } else {
+            strandBox.style.float = 'right';
+        }
+        strandContainer.appendChild(strandBox);
+    });
+}
+
+// Create strand boxes for both Junior and Senior High School
+createStrandBoxes(juniorHighStrands, 'junior-high-strands');
+createStrandBoxes(seniorHighStrands, 'senior-high-strands');
+</script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+/* General Styles */
+html, body {
+    height: 100%; /* Full height for body */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('c:/Users/0ne/Downloads/mfnhsss.jpg'); /* Set the background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    color: #333; /* Dark text color */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height for the wrapper */
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark background for header */
+    color: white; /* White text color */
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px; /* Logo font size */
+    font-weight: bold; /* Bold logo */
+}
+
+.navbar {
+    list-style: none; /* Remove bullet points */
+    display: flex;
+    gap: 15px; /* Space between navbar items */
+}
+
+.navbar a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.navbar a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.section-content {
+    padding: 20px; /* Add padding to the section content */
+    text-align: center; /* Center the text */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for readability */
+    margin: 20px; /* Margin around the section */
+    border-radius: 8px; /* Rounded corners */
+}
+/* Image Styles */
+img {
+    max-width: 50%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure it behaves like a block element */
+    margin: 20px auto; /* Center the image with margin */
+    border-radius: 8px; /* Optional: add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: add a subtle shadow */
+}
+
+/* Flexbox layout for strand boxes */
+.strand-container {
+    display: flex;
+    justify-content: space-between; /* Space between left and right boxes */
+    margin: 20px 0; /* Margin above and below the container */
+}
+
+.strand-box {
+    position: relative;
+    width: 45%; /* Set width for left and right boxes */
+    height: 200px; /* Set a fixed height for the box */
+    perspective: 1000px; /* Perspective for 3D effect */
+}
+
+.strand-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d; /* Preserve 3D effect */
+}
+
+.strand-box:hover .strand-inner {
+    transform: rotateY(180deg); /* Flip on hover */
+}
+
+.strand-front, .strand-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back face */
+    border: 1px solid #007BFF; /* Blue border for strand boxes */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Light background for front */
+}
+
+.strand-back {
+    transform: rotateY(180deg); /* Hide the back face initially */
+    background: rgba(255, 255, 255, 0.95); /* Slightly different background for back */
+}
+
+/* Bottom strand box */
+.strand-bottom {
+    margin: 20px auto; /* Center the bottom box */
+    width: 90%; /* Set width for the bottom box */
+    height: 200px; /* Set a fixed height for the box */
+    perspective: 1000px; /* Perspective for 3D effect */
+}
+
+.footer-row {
+    display: flex; /* Flexbox for footer layout */
+    justify-content: space-between; /* Space between footer columns */
+    padding: 20px; /* Padding for footer */
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark background for footer */
+    color: white; /* White text color */
+}
+
+.footer-col {
+    flex: 1; /* Equal width for footer columns */
+    margin: 0 10px; /* Margin between columns */
+}
+
+.footer-col h4 {
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.footer-col ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.footer-col a {
+    color: white; /* White text for footer links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer-col a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

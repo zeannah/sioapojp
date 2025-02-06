@@ -1,0 +1,144 @@
+html, body {
+    height: 100%; /* Full height for body */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('c:/Users/0ne/Downloads/mfnhsss7.jpg'); /* Set your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    color: #333; /* Dark text color */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height for the wrapper */
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark background for header */
+    color: white; /* White text color */
+    padding: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px; /* Logo font size */
+    font-weight: bold; /* Bold logo */
+}
+
+.navbar {
+    list-style: none; /* Remove bullet points */
+    display: flex;
+    gap: 15px; /* Space between navbar items */
+}
+
+.navbar a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.navbar a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* General styles for the body and wrapper */
+body {
+    font-family: Arial, sans-serif; /* Set a default font */
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1200px; /* Set a maximum width for the wrapper */
+    margin: 0 auto; /* Center the wrapper */
+    padding: 20px; /* Add padding */
+}
+
+/* Styles for the section containing events */
+#UPCOMING_EVENTS {
+    margin: 20px 0; /* Add margin to the section */
+}
+
+/* Styles for each event item */
+.event-item {
+    margin-bottom: 40px; /* Space between event items */
+    padding: 20px; /* Padding inside each event item */
+    border: 1px solid #ccc; /* Border around each event item */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+/* Flexbox for images */
+.event-item img {
+    width: 200px; /* Set a fixed width for the images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Add margin around images */
+}
+
+/* Flexbox layout for images and text */
+.event-item {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between images and text */
+    justify-content: center;
+}
+
+/* Adjust the text container */
+.event-item h2, .event-item p {
+    flex: 1; /* Allow text to take up remaining space */
+    margin: 0 10px; /* Add margin to the text */
+}
+
+/* Read more link styles */
+.read-more {
+    display: inline-block; /* Make the link an inline block */
+    margin-top: 10px; /* Add margin above the link */
+    color: #007BFF; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.read-more:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+
+/* Footer Styles */
+footer {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark background for footer */
+    color: white; /* White text color */
+    padding: 20px; /* Padding for footer */
+}
+
+.footer-row {
+    display: flex; /* Flexbox for footer layout */
+    justify-content: space-between; /* Space between footer columns */
+}
+
+.footer-col {
+    flex: 1; /* Equal width for footer columns */
+    margin: 0 10px; /* Margin between columns */
+}
+
+.footer-col h4 {
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.footer-col ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.footer-col a {
+    color: white; /* White text for footer links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer-col a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

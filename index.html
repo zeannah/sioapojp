@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAWIEE MANOLO FORTICH NHS</title>
+    <link rel="stylesheet" href="DESIGN NI Z.css"> 
+</head>
+<body>
+    <div class="wrapper"> <!-- Added wrapper for flexbox layout -->
+        <header>
+            <nav>
+                <div class="logo">MANOLO FORTICH NATIONAL HIGH SCHOOL</div>
+                <ul class="navbar">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="NEWSROOM.html">Newsroom</a></li>
+                    <li><a href="ALUMNI.html">Alumni</a></li> 
+                    <li><a href="ACADEMICS.html">Academics</a></li>
+                    <li><a href="CAMPUS LIFE.html">Campus Life</a></li>
+                    <li><a href="ABOUT.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <div class="section-content">
+                <h2>Manolo Fortich National High School</h2>
+                <h2>The Home of Spotless Jewels</h2>
+            </div>
+        </section>
+
+        <!--START OF FOOTER CODE-->
+        <footer> 
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>FOLLOW US:</h4>
+                    <ul>
+                        <li><a href="https://www.facebook.com/ManoloFortichNHSOfficial/">FB PAGE: @ManoloFortichNHSOfficial</a></li>
+                        <li><a href="https://www.instagram.com/">INSTA: @ManoloFortichNHS</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col"> 
+                    <h4>EMAIL US:</h4>
+                    <ul>
+                        <li><a href="mailto:ManoloFortichNHS@gmail.com">ManoloFortichNHS@gmail.com</a></li> 
+                        <li><a href="mailto:MFNHS@yahoo.com">MFNHS@yahoo.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col"> 
+                    <h4>CONTACT US:</h4>
+                    <ul>
+                        <li><a href="tel:80008008000">TEL#: 8000-800-8000</a></li>
+                        <li><a href="tel:90099874548">PHONE #: 9009-987-4548</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </footer> 
+    </div> <!-- End of wrapper -->
+
+    <script>
+        // JavaScript to toggle the navigation menu
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbar = document.querySelector('.navbar');
+    
+        menuToggle.addEventListener('change', function() {
+            if (this.checked) {
+                navbar.classList.add('active');
+            } else {
+                navbar.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

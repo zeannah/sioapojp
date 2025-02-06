@@ -1,0 +1,126 @@
+/* General Styles */
+html, body {
+    height: 100%; /* Full height for body */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('c:/Users/0ne/Downloads/mfnhsss7.jpg'); /* Set the background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    color: #333; /* Dark text color */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height for the wrapper */
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark background for header */
+    color: white; /* White text color */
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px; /* Logo font size */
+    font-weight: bold; /* Bold logo */
+}
+
+.navbar {
+    list-style: none; /* Remove bullet points */
+    display: flex;
+    gap: 15px; /* Space between navbar items */
+}
+
+.navbar a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.navbar a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+#news {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-content {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #35424a;
+}
+
+.news-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+.news-item h2 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.news-item p {
+    margin: 0 0 10px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+
+.footer-row {
+    display: flex; /* Flexbox for footer layout */
+    justify-content: space-between; /* Space between footer columns */
+    padding: 20px; 
+    background-color: rgba(51, 51, 51, 0.8); 
+    color: white;
+}
+
+.footer-col {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-col h4 {
+    margin-bottom: 10px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0; 
+}
+
+.footer-col a {
+    color: white; /* White text for footer links */
+    text-decoration: none; 
+}
+
+.footer-col a:hover {
+    text-decoration: underline; 
+}
