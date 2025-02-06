@@ -1,23 +1,23 @@
 /* General Styles */
 html, body {
-    height: 100%; /* Full height for body */
+    height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('c:/Users/0ne/Downloads/mfnhsss7.jpg'); /* Set the background image */
-    background-size: cover; /* Cover the entire viewport */
-    background-position: center; /* Center the image */
-    color: #ffffff; /* Dark text color */
+    background-image: url('c:/Users/0ne/Pictures/GALILEO 24-25(DO NOT OPEN!!!)/VSCODE/Photos/mfnhsss7.jpg'); /* Fixed Path */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
 }
 
 .wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Full height for the wrapper */
+    min-height: 100vh;
 }
 
 header {
-    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark background for header */
-    color: white; /* White text color */
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
     padding: 10px;
 }
 
@@ -28,74 +28,78 @@ nav {
 }
 
 .logo {
-    font-size: 24px; /* Logo font size */
-    font-weight: bold; /* Bold logo */
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .navbar {
-    list-style: none; /* Remove bullet points */
+    list-style: none;
     display: flex;
-    gap: 15px; /* Space between navbar items */
+    gap: 15px;
 }
 
 .navbar a {
-    color: white; /* White text for links */
-    text-decoration: none; /* Remove underline from links */
+    color: white;
+    text-decoration: none;
 }
 
 .navbar a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline;
 }
 
 .section-content {
-    padding: 20px; /* Add padding to the section content */
-    text-align: center; /* Center the text */
-    background-color: transparent; /* Semi-transparent white background for readability */
-    margin: 20px; /* Margin around the section */
-    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Improved readability */
+    margin: 20px;
+    border-radius: 8px;
     margin-bottom: 100px;
 }
 
+/* Downloadable Forms */
 .downloadable-forms {
-    margin-top: 20px; /* Space above the downloadable forms */
+    margin-top: 20px;
 }
 
 .form-box {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Footer */
 .footer-row {
-    display: flex; /* Flexbox for footer layout */
-    justify-content: space-between; /* Space between footer columns */
-    padding: 20px; /* Padding for footer */
-    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark background for footer */
-    color: white; /* White text color */
+    display: flex;
+    flex-wrap: wrap; /* Improved for responsiveness */
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
 }
 
 .footer-col {
-    flex: 1; /* Equal width for footer columns */
-    margin: 0 10px; /* Margin between columns */
+    flex: 1;
+    margin: 0 10px;
+    text-align: center; /* Centers text on small screens */
 }
 
 .footer-col h4 {
-    margin-bottom: 10px; /* Space below the heading */
+    margin-bottom: 10px;
 }
 
 .footer-col ul {
-    list-style: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
+    list-style: none;
+    padding: 0;
 }
 
 .footer-col a {
-    color: white; /* White text for footer links */
-    text-decoration: none; /* Remove underline from links */
+    color: white;
+    text-decoration: none;
 }
 
 .footer-col a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline;
 }
